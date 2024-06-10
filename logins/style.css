@@ -1,0 +1,113 @@
+hmtl {
+    height: auto;
+}
+
+body {
+    
+    display: flex;
+    height: 100%; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 42px;
+}
+a {
+    color: white;
+
+}
+
+.left, .right {
+    position: relative; /* Para que o texto possa ser posicionado dentro da div */
+    width: 50%; /* Metade da largura */
+    height: 750px;
+    color: white; /* Cor do texto */
+    display: flex; /* Flexbox para centralizar o texto */
+    text-align: center; /* Centraliza o texto */
+    
+    
+}
+
+.left {
+    background-image: url('./src/desenvolvimento-web.jpg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-color:white;
+    background-position: center;
+    
+    
+    
+}
+
+.right {
+    background-color: rgb(61, 126, 224);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    
+    
+}
+
+.rightBox {
+    margin: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+.userIntro {
+    margin-top: 40%;
+    margin-bottom: 15%;
+}
+
+.userIntro > h1, p {
+    margin: 0;
+}
+
+.userBox {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 25px;
+    align-items: center;
+    
+}
+
+.userBox > label {
+    font-size: 17px;
+}
+
+.inputZin > input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(124, 123, 123);
+    margin-top: 3px;
+}
+
+.inputZin {
+    margin: 10px;
+    width: 80%;
+    text-align: left;
+
+}
+
+.userBox > button {
+    width: 82%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 151, 229);
+    color: white;
+    background-color: rgb(126, 165, 224);
+    font-size: large;
+}
+
+.checkAndLog {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="left"></div>
+    
+    <div class="right">
+        <div class="rightBox">
+            <div class="userIntro">
+                <h1>Welcome Back!</h1>
+                <p>
+                    Don't have an account yet?  <a href="#">Sign Up</a>
+                </p>
+                
+            </div>
+            <form class="userBox" id="loginForm" method="post" action="#">
+                
+                <div class="inputZin">
+                    <label for="username">Username:</label>
+                    <input id="username" name="username" type="text">
+                </div>
+                <div class="inputZin">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                <br>
+                </div>
+                <div class="checkAndLog">
+                    <div>
+                        <input type="checkbox" name="" id="">Keep me logged in
+                    </div>
+                    <a href="#">Forgot password?</a>
+                </div>
+    
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
