@@ -5,30 +5,24 @@ document.getElementById('loginForm').addEventListener('submit',
     function(event) {
     event.preventDefault();
 
-const usernameLogin = document.getElementById('username').value;
-const passwordLogin = document.getElementById('password').value;
+    const usernameLogin = document.getElementById('username').value;
+    const passwordLogin = document.getElementById('password').value;
 
-if (usernameLogin === "" || passwordLogin === "") {
-    alert(`Por favor, preencha todos os campos.`)
-} else {
-    console.log(`Username: ${usernameLogin}`)
-    console.log(`password: ${passwordLogin}`)
-    alert('Dados enviados.')
-};
-    })
-    // Tenho que revisar isso aqui
-/*
+    if (usernameLogin === "" || passwordLogin === "") {
+        alert(`Por favor, preencha todos os campos.`)
+    } else {
+    // /login é um endpoint que eu tenho que criar no meu backend.
     fetch('/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            username: username,
-            password: password
+            username: usernameLogin,
+            password: passwordLogin
         })
     })
-    .then(Response => response.json())
+    .then(Response => Response.json())
     .then(data => {
         console.log(`Success: ${data}`)
     })
@@ -36,5 +30,5 @@ if (usernameLogin === "" || passwordLogin === "") {
         console.log(`Error: ${error}`)
     })
 }
-*/
+})
 
